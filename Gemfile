@@ -3,11 +3,11 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 
-#Ins Start RK01 'Updating ruby and Rails version'
+#Ins start rk01 'Updating ruby and Rails version'
   ruby '2.3.3'
- #gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
+#gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
   gem 'rails', '~> 5.0.2'
-#iNS End RK01
+#ins end rk01
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
@@ -25,6 +25,10 @@ gem 'puma', '~> 3.0'
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 # gem 'rack-cors'
+#Ins start rk01
+# To generate a diagram based on your application's Active Record models
+gem 'rails-erd'
+#Ins end rk01
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
