@@ -28,6 +28,8 @@ gem 'puma', '~> 3.0'
 #Ins start rk01
 # To generate a diagram based on your application's Active Record models
 gem 'rails-erd'
+# JSON Serializer
+gem 'active_model_serializers', '~> 0.10.0'
 #Ins end rk01
 
 group :development, :test do
