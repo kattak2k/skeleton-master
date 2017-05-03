@@ -25,7 +25,22 @@ a candidate provides for the questions they are asked.
 ## Tasks:
 
 * Interview questions need to be ordered correctly - the test is intermittntly failing now.
+   1. solution : sorting by display_order
+    
+    ```
+    url// http://localhost:3000/interview_questions
+     
+    [{"id":1,"display_order":1,"question_id":1},{"id":3,"display_order":2,"question_id":4},{"id":2,"display_order":3,"question_id":2}]
+    ```
+    
 * Need a way to get an average rating of a candidate's answer to questions - exclude the zero rankings - those should not count
+   2. solution : below is the url outputs the answer "great" of the candidate "Fred Flinstone"                   along the avg rating '4.0' i.e. average of 5.0 , 3.0 & 0.0
+    ``` 
+     url// http://localhost:3000/candidates/1/answers/1 
+
+    {"id":1,"response":"great","candidate":{"id":1,"name":"Fred Flintstone","email":"fflint@bedrock.com","phone":"123456789"},"answer_ratings":"4.0"}
+    
+    ```
 * Lets build out a way to get an upcoming interview schedule for an interviewer - it should include:
   * the next two interviews
   * candidate information 
