@@ -1,3 +1,16 @@
+# == Schema Information
+#
+# Table name: interviews
+#
+#  id             :integer          not null, primary key
+#  interview_date :datetime
+#  description    :string
+#  candidate_id   :integer
+#  position_id    :integer
+#  created_at     :datetime         not null
+#  updated_at     :datetime         not null
+#
+
 require 'test_helper'
 
 class InterviewTest < ActiveSupport::TestCase

@@ -7,6 +7,7 @@ source 'https://rubygems.org'
   ruby '2.3.3'
 #gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
   gem 'rails', '~> 5.0.2'
+  gem 'annotate'
 #ins end rk01
 
 # Use sqlite3 as the database for Active Record
@@ -30,6 +31,7 @@ gem 'puma', '~> 3.0'
 gem 'rails-erd'
 # JSON Serializer
 gem 'active_model_serializers', '~> 0.10.0'
+gem 'annotate'
 #Ins end rk01
 
 group :development, :test do
