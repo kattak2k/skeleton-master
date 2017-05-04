@@ -7,11 +7,14 @@ Rails.application.routes.draw do
 
 # Output: outputs the sort order
   resources :interview_questions , only: [:index]
-
+# CR-2
   resources :answers
-
   resources :candidates do
     resources :answers
   end
-
+ # CR-3
+  #resources :conversions, only: [:index]
+    resources :interviewers do
+     resources :conversions, only: [:index]
+   end
 end

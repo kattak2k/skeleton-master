@@ -25,6 +25,7 @@ a candidate provides for the questions they are asked.
 ## Tasks:
 
 * Interview questions need to be ordered correctly - the test is intermittntly failing now.
+   
    1. solution : sorting by display_order
     
     ```
@@ -34,7 +35,9 @@ a candidate provides for the questions they are asked.
     ```
     
 * Need a way to get an average rating of a candidate's answer to questions - exclude the zero rankings - those should not count
+
    2. solution : below is the url outputs the answer "great" of the candidate "Fred Flinstone"                   along the avg rating '4.0' i.e. average of 5.0 , 3.0 & 0.0
+
     ``` 
      url// http://localhost:3000/candidates/1/answers/1 
 
@@ -46,6 +49,14 @@ a candidate provides for the questions they are asked.
   * candidate information 
   * a list of questions
 
+   3. Solution : check output in below url
+
+   ```
+    url// http://localhost:3000/interviewers/1/conversions
+   ```
+
+   3. solution : below is the url outputs the answer "
+ 
 ## Exploratory Task - if you've got the time to look into it, that'd be great:
 
 * Could we remove the candidate_id column from an interview and use interview_participants to track both interviewers 

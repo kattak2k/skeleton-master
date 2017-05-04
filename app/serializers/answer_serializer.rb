@@ -1,8 +1,8 @@
 class AnswerSerializer < ActiveModel::Serializer
   attributes :id, :response
 
-   belongs_to :candidate
    has_many :answer_ratings
+   belongs_to :candidate
 
    def answer_ratings
      object.answer_ratings.no_zero.avg
